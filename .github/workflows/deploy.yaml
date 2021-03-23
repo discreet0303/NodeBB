@@ -25,10 +25,6 @@ jobs:
         uses: bahmutov/npm-install@v1
         with:
           useLockFile: false
-          
+
       - name: Build Nodebb
         run: ./nodebb build
-        
-  finish:
-    needs: build
-    runs-on: ubuntu-latest
