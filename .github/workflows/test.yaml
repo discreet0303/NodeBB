@@ -36,7 +36,7 @@ jobs:
             node: 14
             database: mongo-dev
             lint: true
-    runs-on: ${{ matrix.os }}
+    runs-on: self-hosted
     env:
       TEST_ENV: ${{ matrix.test_env || 'production' }}
 
